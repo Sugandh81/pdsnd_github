@@ -182,6 +182,7 @@ def user_stats(df, city):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+#Sampling of raw data based on choice of user input
 def raw_input_data(df):
     user_input = input('Would you like to see a Raw Data? \'yes\'.\n')
     while True:
