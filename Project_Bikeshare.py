@@ -159,7 +159,7 @@ def user_stats(df, city):
           print('\n Gender is not present in Washington ')
 
 
-    # TO DO: Display earliest, most recent, and most common year of birth
+    # Display earliest, most recent, and most common year of birth
     try :
            if city in ['chicago','new york city']:
                birth_year = df['Birth Year'].min()
@@ -182,6 +182,7 @@ def user_stats(df, city):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+#Sampling of raw data based on choice of user input
 def raw_input_data(df):
     user_input = input('Would you like to see a Raw Data? \'yes\'.\n')
     while True:
