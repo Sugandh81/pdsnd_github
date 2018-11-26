@@ -146,11 +146,11 @@ def user_stats(df, city):
     print('\nCalculating User Stats...\n')
     start_time = time.time()
 
-    # TO DO: Display counts of user types
+    # Display counts of user types
     user_type = df['User Type'].value_counts()
     print('\n The count of User Type is :',user_type)
 
-    # TO DO: Display counts of
+    # Display counts of
     try :
         if city in ['chicago','new york city']:
            gender = df['Gender'].value_counts()
